@@ -1,0 +1,41 @@
+{
+  "name": "gulp-jpeg-2000",
+  "version": "1.0.0",
+  "description": "A gulp plugin for converting images to JPEG 2000 (JP2)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/courtneypattison/gulp-jpeg-2000.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "jp2",
+    "image"
+  ],
+  "author": "Courtney Pattison <courtney@courtneypattison.com> (https://courtneypattison.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/courtneypattison/gulp-jpeg-2000/issues"
+  },
+  "homepage": "https://github.com/courtneypattison/gulp-jpeg-2000#readme",
+  "dependencies": {
+    "gulp-gm": "0.0.9",
+    "modify-error-event": "^1.0.0",
+    "plugin-error": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "file-type": "^10.7.0",
+    "mocha": "^5.2.0",
+    "path": "^0.12.7",
+    "vinyl": "^2.2.0",
+    "vinyl-file": "^3.0.0"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true
+  }
+}
