@@ -13,7 +13,9 @@
   "keywords": [
     "gulpplugin",
     "jp2",
-    "image"
+    "image",
+    "jpeg",
+    "jpeg2000"
   ],
   "author": "Courtney Pattison <courtney@courtneypattison.com> (https://courtneypattison.com/)",
   "license": "MIT",
