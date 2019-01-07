@@ -8,18 +8,18 @@ npm install --save-dev gulp-jpeg-2000
 ```
 
 ### ImageMagick
-Make sure you have ImageMagick installed on your system. Test that it is installed by running `convert` in the terminal.
+Make sure you have ImageMagick installed on your system.
 
 #### macOS
 Using [Homebrew](https://brew.sh/):
 ```
-brew install ImageMagick
+brew install imagemagick
 ```
 
 #### Ubuntu
 Using apt:
 ```
-apt install ImageMagick
+apt install imagemagick
 ```
 
 #### Windows
@@ -33,16 +33,9 @@ var jp2 = require('gulp-jpeg-2000');
 function convertJP2() {
   return gulp.src('src/images/**/*.{jpg,jpeg,png}')
     .pipe(jp2())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist/images'));
 }
 ```
-
-## Testing
-
-1. Install ImageMagick
-2. Install dependencies locally `npm install`
-3. Install gulp globally `npm install -g gulp`
-4. Run `gulp test`
 
 ## License
 
