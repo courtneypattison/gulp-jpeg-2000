@@ -1,4 +1,4 @@
-# [gulp](https://github.com/gulpjs/gulp)-jpeg-2000 [![Build Status](https://travis-ci.org/courtneypattison/gulp-jpeg-2000.svg?branch=master)](https://travis-ci.org/courtneypattison/gulp-jpeg-2000) [![npm version](https://badge.fury.io/js/gulp-jpeg-2000.svg)](https://badge.fury.io/js/gulp-jpeg-2000)
+# [gulp](https://github.com/gulpjs/gulp)-jpeg-2000 [![Build Status](https://travis-ci.org/courtneypattison/gulp-jpeg-2000.svg?branch=master)](https://travis-ci.org/courtneypattison/gulp-jpeg-2000) [![npm version](https://badge.fury.io/js/gulp-jpeg-2000.svg)](https://badge.fury.io/js/gulp-jpeg-2000) [![Coverage Status](https://coveralls.io/repos/github/courtneypattison/gulp-jpeg-2000/badge.svg?branch=master)](https://coveralls.io/github/courtneypattison/gulp-jpeg-2000?branch=master)
 > A gulp plugin for converting images to JPEG 2000 (JP2) using [ImageMagick](https://www.imagemagick.org/script/index.php)
 
 ## Installation
