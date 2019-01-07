@@ -12,4 +12,4 @@ os: linux
 
 script: npm run coverage
 
-after_script: cat ./coverage/lcov.info | coveralls.js
+after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
