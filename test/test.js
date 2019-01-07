@@ -26,8 +26,6 @@ describe(PLUGIN_NAME, () => {
     const stream = jp2();
     const vinyl = new Vinyl();
 
-    
-
     stream.write(vinyl);
     stream.once('data', (file) => {
       expect(file).to.deep.equal(vinyl);
