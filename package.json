@@ -1,8 +1,11 @@
 {
   "name": "gulp-jpeg-2000",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A gulp plugin for converting images to JPEG 2000 (JP2)",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover node_modules/.bin/_mocha test/test.js"
@@ -35,7 +38,6 @@
     "file-type": "^10.7.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "nock-exec": "^0.1.0",
     "path": "^0.12.7",
     "sinon": "^7.2.2",
     "vinyl": "^2.2.0",
