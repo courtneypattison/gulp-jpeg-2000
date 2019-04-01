@@ -16,13 +16,13 @@ Make sure you have ImageMagick installed on your system.
 #### macOS
 Using [Homebrew](https://brew.sh/):
 ```
-brew install imagemagick
+$ brew install imagemagick
 ```
 
 #### Ubuntu
 Using apt:
 ```
-apt install imagemagick
+$ apt install imagemagick
 ```
 
 #### Windows
