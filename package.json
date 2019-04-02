@@ -23,9 +23,7 @@
   ],
   "author": "Courtney Pattison <courtney@courtneypattison.com> (https://courtneypattison.com/)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/courtneypattison/gulp-jpeg-2000/issues"
-  },
+  "bugs": "https://github.com/courtneypattison/gulp-jpeg-2000/issues",
   "homepage": "https://github.com/courtneypattison/gulp-jpeg-2000#readme",
   "dependencies": {
     "gulp-gm": "0.0.9",
