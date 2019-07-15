@@ -30,7 +30,7 @@ $ apt install imagemagick
 [Download ImageMagick][imagemagick-download-url]
 
 ## Example
-```js
+```.js
 var gulp = require('gulp');
 var jp2 = require('gulp-jpeg-2000');
 
