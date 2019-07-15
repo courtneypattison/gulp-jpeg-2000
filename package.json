@@ -1,6 +1,6 @@
 {
   "name": "gulp-jpeg-2000",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A gulp plugin for converting images to JPEG 2000 (JP2)",
   "main": "index.js",
   "files": [
