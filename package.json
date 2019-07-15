@@ -8,7 +8,11 @@
   ],
   "scripts": {
     "test": "mocha",
-    "coverage": "istanbul cover node_modules/.bin/_mocha test/test.js"
+    "cover:lcov": "nyc --reporter=lcov mocha",
+    "cover:html": "nyc --reporter=html mocha",
+    "cover:rm": "rm -rf ./coverage && rm -rf ./.nyc_output",
+    "cover:pipe": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "cover:write": "yarn cover:lcov && yarn cover:pipe && yarn cover:rm"
   },
   "repository": {
     "type": "git",
@@ -34,8 +38,8 @@
     "chai": "^4.2.0",
     "coveralls": "^3.0.5",
     "file-type": "^12.0.1",
-    "istanbul": "^0.4.5",
     "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
     "path": "^0.12.7",
     "sinon": "^7.3.2",
     "vinyl": "^2.2.0",
