@@ -8,9 +8,9 @@
   ],
   "scripts": {
     "test": "mocha",
-    "cover:clean": "rm -rf ./coverage && rm -rf ./.nyc_output",
-    "cover:html": "nyc --reporter=html mocha",
     "cover:lcov": "nyc --reporter=lcov mocha",
+    "cover:html": "nyc --reporter=html mocha",
+    "cover:rm": "rm -rf ./coverage && rm -rf ./.nyc_output",
     "cover:write": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
