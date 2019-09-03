@@ -1,4 +1,4 @@
-[![Build Status][travis-img]][travis-url] [![Coverage Status][coveralls-img]][coveralls-url] [![NPM Version][npm-img]][npm-url]
+[![Coverage Status][coveralls-img]][coveralls-url] [![NPM Version][npm-img]][npm-url]
 # [gulp][gulp-url]-jpeg-2000
 > A gulp plugin for converting images to JPEG 2000 (JP2) using [ImageMagick][imagemagick-url]
 
