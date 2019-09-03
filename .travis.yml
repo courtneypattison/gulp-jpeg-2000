@@ -4,6 +4,8 @@ node_js: node
 
 before_install: yarn global add gulp
 
-script: yarn cover:lcov
+script:
+  - yarn convert
+  - yarn cover:lcov
 
 after_script: yarn cover:write

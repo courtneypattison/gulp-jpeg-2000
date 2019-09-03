@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "test": "mocha",
+    "convert": "convert test/fixtures/cat.jpg yo.png",
     "cover:lcov": "nyc --reporter=lcov mocha",
     "cover:html": "nyc --reporter=html mocha",
     "cover:rm": "rm -rf ./coverage && rm -rf ./.nyc_output",
