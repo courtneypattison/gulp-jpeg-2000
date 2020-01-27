@@ -7,7 +7,7 @@ const PluginError = require('plugin-error');
 
 const PLUGIN_NAME = 'gulp-jpeg-2000';
 
-module.exports = () => {
+module.exports = (format) => {
   cp.exec('convert -version', (error, stdout) => {
     if (error || !stdout || stdout.toString().toLowerCase().indexOf('imagemagick') === -1) {
       throw new PluginError(PLUGIN_NAME, 'ImageMagick is not installed! Installation instructions: https://github.com/courtneypattison/gulp-jpeg-2000', { showProperties: false });
@@ -17,7 +17,7 @@ module.exports = () => {
   let fileName = '';
   return modifyErrorEvent(gm((file) => {
     fileName = file.source;
-    return file.setFormat('jp2');
+    return file.setFormat(format || 'jp2');
   }, { imageMagick: true }), (err) => {
     return new PluginError(PLUGIN_NAME, err, { fileName: fileName });
   });
