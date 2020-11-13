@@ -2,7 +2,10 @@ language: node_js
 
 node_js: node
 
-before_install: yarn global add gulp
+before_install:
+before_install:
+  - yarn global add gulp
+  - sudo apt install imagemagick
 
 script:
   - yarn convert
