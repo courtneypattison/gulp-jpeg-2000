@@ -8,7 +8,7 @@ const PluginError = require('plugin-error');
 const PLUGIN_NAME = 'gulp-jpeg-2000';
 
 module.exports = () => {
-  cp.exec('convert -version', (error, stdout) => {
+  cp.exec('magick -version', (error, stdout) => {
     if (error || !stdout || stdout.toString().toLowerCase().indexOf('imagemagick') === -1) {
       throw new PluginError(PLUGIN_NAME, 'ImageMagick is not installed! Installation instructions: https://github.com/courtneypattison/gulp-jpeg-2000', { showProperties: false });
     }
