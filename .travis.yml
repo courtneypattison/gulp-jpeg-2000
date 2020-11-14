@@ -1,8 +1,11 @@
-dist: precise
-
 language: node_js
 
 node_js: node
+
+addons:
+  apt:
+    packages:
+    - imagemagick
 
 before_install: yarn global add gulp
 
