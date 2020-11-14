@@ -1,13 +1,14 @@
-dist: xenial
-
 language: node_js
 
 node_js: node
 
 addons:
   apt:
+    update: true
+    sources:
+      - sourceline: 'ppa:opencpu/imagemagick'
     packages:
-    - imagemagick
+      - libmagick++-dev
 
 before_install:
   - yarn global add gulp
