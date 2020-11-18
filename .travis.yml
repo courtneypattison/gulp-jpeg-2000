@@ -2,19 +2,10 @@ language: node_js
 
 node_js: node
 
-addons:
-  apt:
-    update: true
-    sources:
-      - sourceline: 'ppa:opencpu/imagemagick'
-    packages:
-      - libmagick++-dev
-
-before_install:
-  - yarn global add gulp
+before_install: yarn global add gulp
 
 script:
-  - yarn convert
+  - yarn test
   - yarn cover:lcov
 
 after_script: yarn cover:write
