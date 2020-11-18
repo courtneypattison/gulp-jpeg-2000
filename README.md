@@ -19,7 +19,7 @@ Using [Homebrew][brew-url]:
 ```
 $ brew install imagemagick
 ```
-Run `$ convert -version` to ensure version you've installed includes the legacy command. If you get an error from this command, try `$ brew install imagemagick@6`.
+Run `$ convert -version` to ensure the version you've installed includes the legacy command. If you get an error from this command, try `$ brew install imagemagick@6`.
 
 #### Ubuntu
 Run `$ convert -version` to see if ImageMagick is already installed. If not, use apt:
