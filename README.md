@@ -12,22 +12,24 @@ $ npm i gulp-jpeg-2000 -D
 ```
 
 ### ImageMagick
-Make sure you have ImageMagick installed on your system.
+Make sure you have ImageMagick with the legacy tools installed on your system. This plugin uses ImageMagick's legacy command `$ convert` that was changed to `$ magick convert` in version 7. 
 
 #### macOS
 Using [Homebrew][brew-url]:
 ```
 $ brew install imagemagick
 ```
+Run `$ convert -version` to ensure version you've installed includes the legacy command. If you get an error from this command, try `$ brew install imagemagick@6`.
 
 #### Ubuntu
-Using apt:
+Run `$ convert -version` to see if ImageMagick is already installed. If not, use apt:
 ```
 $ apt install imagemagick
 ```
 
 #### Windows
-[Download ImageMagick][imagemagick-download-url]
+[Download ImageMagick][imagemagick-download-url]. Check "install legacy tools" when installing.
+Run `$ convert -version` to ensure the legacy command was sym linked.
 
 ## Example
 ```.js
