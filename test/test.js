@@ -19,7 +19,7 @@ describe(PLUGIN_NAME, () => {
                           Features: Cipher DPC HDRI Modules
                           Delegates (built-in): bzlib freetype jng jp2 jpeg lcms ltdl lzma png tiff webp xml zlib;`;
   const execStub = sinon.stub(cp, 'exec');
-  const notInstalledError = new PluginError(PLUGIN_NAME, 'ImageMagick is not installed! Installation instructions: https://github.com/courtneypattison/gulp-jpeg-2000', { showProperties: false });
+  const notInstalledError = new PluginError(PLUGIN_NAME, 'ImageMagick is not installed or an incompatible version is installed! Installation instructions: https://github.com/courtneypattison/gulp-jpeg-2000', { showProperties: false });
 
   it('return a null file when passed null file', (done) => {
     execStub.yields(null, convertVersion);
