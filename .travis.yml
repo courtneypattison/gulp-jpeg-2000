@@ -5,6 +5,7 @@ node_js: node
 before_install: yarn global add gulp
 
 script:
+  - yarn convert
   - yarn test
   - yarn cover:lcov
 
